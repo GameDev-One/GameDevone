@@ -28,7 +28,8 @@ twitter_username: gamedevone1
 github_username:  GameDev-One
 
 # Build settings
-theme: minima
+# Removed minima as it is now a regular theme
+#theme: minima
 plugins:
   - jekyll-feed
 
