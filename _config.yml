@@ -27,6 +27,15 @@ url: "https://gamedev-one.github.io" # the base hostname & protocol for your sit
 twitter_username: gamedevone1
 github_username:  GameDev-One
 
+# Fields minima uses, but are not defaulted with the jekyll new commnad.
+# Author is default for posts
+author: Devone Reynolds
+
+# New fields not defaulted by jekyll-new with the minima these
+# Add a copyright. A copyright symbol and year will be added automatically
+# copyright: Company Name, Inc.
+copyright: The MIT License (MIT)
+
 # Build settings
 # Removed minima as it is now a regular theme
 #theme: minima
