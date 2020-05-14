@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: GameDevOne Projects
+title: GameDevOne
 email: gamedevone1@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Flavorful Project Blog
@@ -30,11 +30,15 @@ github_username:  GameDev-One
 # Fields minima uses, but are not defaulted with the jekyll new commnad.
 # Author is default for posts
 author: Devone Reynolds
+linkedin_username: devone-reynolds
 
 # New fields not defaulted by jekyll-new with the minima these
 # Add a copyright. A copyright symbol and year will be added automatically
 # copyright: Company Name, Inc.
 copyright: The MIT License (MIT)
+
+# Title-logo is a new field that, displays a logo
+title-logo: /assets/icon/title-logo.png
 
 # Build settings
 # Removed minima as it is now a regular theme
