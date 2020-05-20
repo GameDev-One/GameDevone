@@ -13,6 +13,16 @@ layout: page
     <h1>
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </h1>
+    <p align="left">
+      <a href="{{ site.baseurl }}{{ post.url }}" alt="default-thumbnail1">
+        {% assign thumbnail_url = post.thumbnail %}
+        {% capture start %}{{ post.thumbnail | slice: 0 }}{% endcapture %}
+        {% if start == '/' %}
+          {% assign post.thumbnail = post.thumbnail | prepend: site.baseurl %}
+        {% endif %}
+        <img src="{{ thumbnail_url }}" alt="default-thumbnail2">
+      </a>
+    </p>
     <div class="post-content">
       <p>
       {% assign _content = post.content %}
