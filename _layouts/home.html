@@ -10,10 +10,7 @@ layout: page
 <div id="post-list">
   {% for post in paginator.posts %}
   <div class="post-preview">
-    <h1>
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    </h1>
-    <p align="left">
+    <p align="center">
       <a href="{{ site.baseurl }}{{ post.url }}" alt="default-thumbnail1">
         {% assign thumbnail_url = post.thumbnail %}
         {% capture start %}{{ post.thumbnail | slice: 0 }}{% endcapture %}
@@ -22,14 +19,20 @@ layout: page
         {% endif %}
         <img src="{{ thumbnail_url }}" alt="default-thumbnail2">
       </a>
+    <div class="card" style="--background: url(https://gamedev-one.github.io/GameDevone/{{ thumbnail_url }});">
+        <div class="img"> <span></span><span></span><span></span><span></span></div>
+        <div class="content">
+          <h1>{{ post.title }}</h1>
+          <h4>
+            {% assign _content = post.content %}
+            {% include no-linenos.html %}
+            {{ _content | markdownify | strip_html | truncate: 300 }}
+          </h4>
+          <a href="{{ site.baseurl }}{{ post.url }}"> Read More</a>
+        </div>
+      </div>
     </p>
-    <div class="post-content">
-      <p>
-      {% assign _content = post.content %}
-      {% include no-linenos.html %}
-      {{ _content | markdownify | strip_html | truncate: 200 }}
-      </p>
-    </div>
+    
 
     <div class="post-meta text-muted">
       <!-- posted date -->
@@ -49,6 +52,8 @@ layout: page
     </div>
   </div> <!-- .post-review -->
   {% endfor %}
+
+  
 </div> <!-- #post-list -->
 
 {% if paginator.total_pages > 0 %}
