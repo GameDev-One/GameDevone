@@ -115,7 +115,7 @@ defaults:
         -
           label: Posts
           url: /
-      thumbnail: /assets/img/default-thumbnail.png
+      thumbnail: assets/img/default-thumbnail.png
   -
     scope:
       path: _drafts
