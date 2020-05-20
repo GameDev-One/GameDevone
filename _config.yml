@@ -20,7 +20,7 @@ url: 'https://gamedev-one.github.io'
 
 author: Devone Reynolds                 # change to your full name
 
-avatar: /assets/img/avatar.png          # support internet resources
+avatar: /assets/img/favicons/avatar.png         # support internet resources
 
 github:
   username: GameDev-One             # change to your github username
