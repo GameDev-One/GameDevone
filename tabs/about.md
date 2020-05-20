@@ -9,4 +9,7 @@ title: About
 ---
 
 > **Note**: Add Markdown syntax content to file `tabs/about.md` and it will show up on this page.
-> ![Devone Reynolds](https://github.com/GameDev-One/GameDevone/blob/master/assets/img/about/aboutme.png?raw=true)
+
+<p align="center">
+<img src ="https://github.com/GameDev-One/GameDevone/blob/master/assets/img/about/aboutme.png?raw=true" class="center" width="200">
+</p>
