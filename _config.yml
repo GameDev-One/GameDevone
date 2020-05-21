@@ -51,12 +51,12 @@ timezone: America/Los_Angeles
 
 google_analytics:
   # Fill with your Google Analytics ID
-  id: ''
+  id: 'UA-167292916-1'
   # The Google Analytics pageviews switch.
 
   pv:
     # DO NOT enable it unless you know how to deploy the Google Analytics superProxy.
-    enabled: false
+    enabled: true
     # the next options only valid when `google_analytics.pv` is enabled.
     proxy_url: ''
     proxy_endpoint: ''
