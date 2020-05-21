@@ -17,9 +17,8 @@ layout: page
         {% if start == '/' %}
           {% assign post.thumbnail = post.thumbnail | prepend: site.baseurl %}
         {% endif %}
-        <img src="{{ thumbnail_url }}" alt="default-thumbnail2">
       </a>
-    <div class="card" style="--background: url(https://gamedev-one.github.io/GameDevone/{{ thumbnail_url }});">
+      <div class="card" style="--background: url(https://gamedev-one.github.io/GameDevone/{{ thumbnail_url }});">
         <div class="img"> <span></span><span></span><span></span><span></span></div>
         <div class="content">
           <h1>{{ post.title }}</h1>
