@@ -28,7 +28,7 @@ layout: page
           <h4>
             {% assign _content = post.content %}
             {% include no-linenos.html %}
-            {{ _content | markdownify | strip_html | truncate: 300 }}
+            {{ _content | markdownify | strip_html | truncate: 100 }}
           </h4>
           <a href="{{ site.baseurl }}{{ post.url }}"> Read More</a>
         </div>
@@ -40,7 +40,7 @@ layout: page
       <!-- posted date -->
       <i class="far fa-clock fa-fw"></i>
       <span class="timeago" data-toggle="tooltip" data-placement="bottom"
-        title="{{ post.date | date: site.data.date_format.tooltip }}">
+        title="Posted {{ post.date | date: site.data.date_format.tooltip }}">
       {{ post.date | date: site.data.date_format.post }}
       <i class="unloaded">{{ post.date | date_to_xmlschema }}</i>
       </span>
