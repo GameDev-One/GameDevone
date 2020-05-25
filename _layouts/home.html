@@ -10,7 +10,6 @@ layout: page
 <div id="post-list">
   {% for post in paginator.posts %}
   <div class="post-preview">
-    <p align="center">
       <a href="{{ site.baseurl }}{{ post.url }}" alt="default-thumbnail1">
         {% assign thumbnail_url = post.thumbnail %}
         {% capture start %}{{ post.thumbnail | slice: 0 }}{% endcapture %}
@@ -22,34 +21,34 @@ layout: page
         <div class="img"> <span></span><span></span><span></span><span></span></div>
         <div class="content">
           <h1>
-            <p style="color:goldenrod;">{{ post.title }}</p>
+            <p style="color:goldenrod;"align="center">{{ post.title }} </p>
             
           </h1>
           <h4>
-            {% assign _content = post.content %}
+            <!-- {% assign _content = post.content %}
             {% include no-linenos.html %}
-            {{ _content | markdownify | strip_html | truncate: 100 }}
+            {{ _content | markdownify | strip_html | truncate: 100 }} -->
           </h4>
-          <a href="{{ site.baseurl }}{{ post.url }}"> Read More</a>
+          <a href="{{ site.baseurl }}{{ post.url }}" style="color:rgb(30, 92, 46)"> Read More</a>
         </div>
       </div>
-    </p>
     
-
     <div class="post-meta text-muted">
       <!-- posted date -->
+      {{ post.title }}
+      || Posted
       <i class="far fa-clock fa-fw"></i>
       <span class="timeago" data-toggle="tooltip" data-placement="bottom"
-        title="Posted {{ post.date | date: site.data.date_format.tooltip }}">
+        title="{{ post.date | date: site.data.date_format.tooltip }}">
       {{ post.date | date: site.data.date_format.post }}
       <i class="unloaded">{{ post.date | date_to_xmlschema }}</i>
       </span>
       <!-- page views -->
       {% if site.google_analytics.pv.enabled %}
-      <i class="far fa-eye fa-fw"></i>
+      <!-- <i class="far fa-eye fa-fw"></i>
       <span id="pv_{{-post.title-}}" class="pageviews">
         <i class="fas fa-spinner fa-spin fa-fw"></i>
-      </span>
+      </span> -->
       {% endif %}
     </div>
   </div> <!-- .post-review -->
