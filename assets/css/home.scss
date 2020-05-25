@@ -138,8 +138,8 @@
 
 .card {
   border-radius: 12px;
-  width: 360px;
-  height: 360px;
+  width: 320px;
+  height: 320px;
   background: var(--background);
   background-size: cover;
   position: relative;
@@ -168,7 +168,6 @@
   height: 100%;
   background: var(--background);
   background-size: cover;
-  background-clip: content-box;
   transition: 0.5s;
 }
 .card .img span:nth-child(1) {
